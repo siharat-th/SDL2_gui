@@ -1,0 +1,5 @@
+{
+	"SDL_ROOT" = "/Users/Pomza/Desktop/GitHub/SDL2";
+	"SDL_IMAGE_ROOT" = "/Users/Pomza/Desktop/GitHub/SDL2_image";
+	"SDL_TTF_ROOT" = "/Users/Pomza/Desktop/GitHub/SDL2_ttf";
+}
