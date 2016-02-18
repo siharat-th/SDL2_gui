@@ -16,7 +16,15 @@
 	#endif
 #endif
 
-#ifdef TARGET_OSX
+#if defined( __APPLE_CC__)
+    #define __ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES 0
+    #include <TargetConditionals.h>
+    #if TARGET_OS_IPHONE_SIMULATOR || TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE || TARGET_IPHONE
+        #include <unistd.h>
+    #endif
+#endif
+
+#ifdef __OSX__
 	#include <mach-o/dyld.h>       /* _NSGetExecutablePath */
 	#include <limits.h>        /* PATH_MAX */
 #endif

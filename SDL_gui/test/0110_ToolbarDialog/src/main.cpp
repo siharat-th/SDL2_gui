@@ -290,12 +290,12 @@ main(int argc, char *argv[])
     activePalette = 0;
 
 	jsInitFileUtils();
-	cout << "cwd= " << jsFilePath::getCurrentWorkingDirectory().c_str() << endl;
-	cout << "home= " << jsFilePath::getUserHomeDir().c_str() << endl;
-	cout << "exeDir= " << jsFilePath::getCurrentExeDir().c_str() << endl;
-	cout << "exePath= " << jsFilePath::getCurrentExePath().c_str() << endl;
-    jsDirectory d;
-    d.listDir(".");
+//	cout << "cwd= " << jsFilePath::getCurrentWorkingDirectory().c_str() << endl;
+//	cout << "home= " << jsFilePath::getUserHomeDir().c_str() << endl;
+//	cout << "exeDir= " << jsFilePath::getCurrentExeDir().c_str() << endl;
+//	cout << "exePath= " << jsFilePath::getCurrentExePath().c_str() << endl;
+//    jsDirectory d;
+//    d.listDir(".");
     
     //int sx = 720, sy = 405;
 #if __IPHONEOS__ or __ANDROID__

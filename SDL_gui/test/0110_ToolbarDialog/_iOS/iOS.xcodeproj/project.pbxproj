@@ -12,9 +12,6 @@
 		386614401BCF771600643DB9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3866143F1BCF771600643DB9 /* CoreImage.framework */; };
 		386614421BCF775200643DB9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386614411BCF775200643DB9 /* ImageIO.framework */; };
 		386614441BCF778100643DB9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386614431BCF778100643DB9 /* MobileCoreServices.framework */; };
-		386D394E1C33AF5600769F0E /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 386D39411C33AF3A00769F0E /* libSDL2_image.a */; };
-		386D394F1C33AF5600769F0E /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 386D39471C33AF4500769F0E /* libSDL2_ttf.a */; };
-		386D39501C33AF5600769F0E /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 386D393B1C33AF2F00769F0E /* libSDL2.a */; };
 		386D39601C33AF5C00769F0E /* GUI_BasicWidgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 386D39521C33AF5C00769F0E /* GUI_BasicWidgets.cpp */; };
 		386D39611C33AF5C00769F0E /* GUI_MainWin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 386D39541C33AF5C00769F0E /* GUI_MainWin.cpp */; };
 		386D39621C33AF5C00769F0E /* GUI_TopWin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 386D39561C33AF5C00769F0E /* GUI_TopWin.cpp */; };
@@ -32,50 +29,36 @@
 		38CA5CD11BCCAFEB0099BC3B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA5CC81BCCAFEB0099BC3B /* OpenGLES.framework */; };
 		38CA5CD21BCCAFEB0099BC3B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA5CC91BCCAFEB0099BC3B /* QuartzCore.framework */; };
 		38CA5CD31BCCAFEB0099BC3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA5CCA1BCCAFEB0099BC3B /* UIKit.framework */; };
+		726044E01C762F19004DCB19 /* jsFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 726044DE1C762F19004DCB19 /* jsFileUtils.cpp */; };
+		726044E31C762F49004DCB19 /* GUI_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 726044E21C762F49004DCB19 /* GUI_iOS.mm */; };
+		726044E41C762F8E004DCB19 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 726044C31C762B0F004DCB19 /* libSDL2.a */; };
+		726044E51C762F94004DCB19 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 726044C81C762B37004DCB19 /* libSDL2_image.a */; };
+		726044E61C762F98004DCB19 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 726044CD1C762B4B004DCB19 /* libSDL2_ttf.a */; };
+		726044E91C7631F9004DCB19 /* boost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 726044E71C7631F8004DCB19 /* boost_filesystem.a */; };
+		726044EA1C7631F9004DCB19 /* boost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 726044E81C7631F8004DCB19 /* boost_system.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		386D393A1C33AF2F00769F0E /* PBXContainerItemProxy */ = {
+		726044C21C762B0F004DCB19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 386D39351C33AF2E00769F0E /* SDL.xcodeproj */;
+			containerPortal = 386D39421C33AF4500769F0E /* SDL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FD6526630DE8FCCB002AD96B;
 			remoteInfo = libSDL;
 		};
-		386D39401C33AF3A00769F0E /* PBXContainerItemProxy */ = {
+		726044C71C762B37004DCB19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 386D393C1C33AF3A00769F0E /* SDL_image.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BE1FA74107AF4C45004B6283;
 			remoteInfo = libSDL_image;
 		};
-		386D39461C33AF4500769F0E /* PBXContainerItemProxy */ = {
+		726044CC1C762B4B004DCB19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 386D39421C33AF4500769F0E /* SDL_ttf.xcodeproj */;
+			containerPortal = 386D39351C33AF2E00769F0E /* SDL_ttf.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BE48FD6E07AFA17000BB41DA;
 			remoteInfo = "Static Library";
-		};
-		386D39481C33AF5100769F0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 386D39421C33AF4500769F0E /* SDL_ttf.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BE48FD6807AFA17000BB41DA;
-			remoteInfo = "Static Library";
-		};
-		386D394A1C33AF5100769F0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 386D393C1C33AF3A00769F0E /* SDL_image.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BE1FA72F07AF4C45004B6283;
-			remoteInfo = libSDL_image;
-		};
-		386D394C1C33AF5100769F0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 386D39351C33AF2E00769F0E /* SDL.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FD6526620DE8FCCB002AD96B;
-			remoteInfo = libSDL;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -85,9 +68,9 @@
 		3866143F1BCF771600643DB9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		386614411BCF775200643DB9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		386614431BCF778100643DB9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		386D39351C33AF2E00769F0E /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../../../SDL/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
-		386D393C1C33AF3A00769F0E /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "../../../../SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
-		386D39421C33AF4500769F0E /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "../../../../SDL_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
+		386D39351C33AF2E00769F0E /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "../../../../../../../Desktop/GitHub/SDL2_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
+		386D393C1C33AF3A00769F0E /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "../../../../../../../Desktop/GitHub/SDL2_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
+		386D39421C33AF4500769F0E /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../../../../../../Desktop/GitHub/SDL2/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		386D39521C33AF5C00769F0E /* GUI_BasicWidgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GUI_BasicWidgets.cpp; sourceTree = "<group>"; };
 		386D39531C33AF5C00769F0E /* GUI_BasicWidgets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUI_BasicWidgets.h; sourceTree = "<group>"; };
 		386D39541C33AF5C00769F0E /* GUI_MainWin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GUI_MainWin.cpp; sourceTree = "<group>"; };
@@ -115,6 +98,12 @@
 		38CA5CC81BCCAFEB0099BC3B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		38CA5CC91BCCAFEB0099BC3B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		38CA5CCA1BCCAFEB0099BC3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		726044DE1C762F19004DCB19 /* jsFileUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsFileUtils.cpp; sourceTree = "<group>"; };
+		726044DF1C762F19004DCB19 /* jsFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsFileUtils.h; sourceTree = "<group>"; };
+		726044E11C762F49004DCB19 /* GUI_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUI_iOS.h; sourceTree = "<group>"; };
+		726044E21C762F49004DCB19 /* GUI_iOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GUI_iOS.mm; sourceTree = "<group>"; };
+		726044E71C7631F8004DCB19 /* boost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = boost_filesystem.a; path = ../../../libs/boost/lib/ios/boost_filesystem.a; sourceTree = "<group>"; };
+		726044E81C7631F8004DCB19 /* boost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = boost_system.a; path = ../../../libs/boost/lib/ios/boost_system.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +111,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				386D394E1C33AF5600769F0E /* libSDL2_image.a in Frameworks */,
-				386D394F1C33AF5600769F0E /* libSDL2_ttf.a in Frameworks */,
-				386D39501C33AF5600769F0E /* libSDL2.a in Frameworks */,
+				726044E91C7631F9004DCB19 /* boost_filesystem.a in Frameworks */,
+				726044EA1C7631F9004DCB19 /* boost_system.a in Frameworks */,
+				726044E61C762F98004DCB19 /* libSDL2_ttf.a in Frameworks */,
+				726044E51C762F94004DCB19 /* libSDL2_image.a in Frameworks */,
+				726044E41C762F8E004DCB19 /* libSDL2.a in Frameworks */,
 				386614441BCF778100643DB9 /* MobileCoreServices.framework in Frameworks */,
 				386614421BCF775200643DB9 /* ImageIO.framework in Frameworks */,
 				386614401BCF771600643DB9 /* CoreImage.framework in Frameworks */,
@@ -143,33 +134,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		386D39361C33AF2E00769F0E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				386D393B1C33AF2F00769F0E /* libSDL2.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		386D393D1C33AF3A00769F0E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				386D39411C33AF3A00769F0E /* libSDL2_image.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		386D39431C33AF4500769F0E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				386D39471C33AF4500769F0E /* libSDL2_ttf.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		386D39511C33AF5C00769F0E /* SDL_gui */ = {
 			isa = PBXGroup;
 			children = (
+				726044E11C762F49004DCB19 /* GUI_iOS.h */,
+				726044E21C762F49004DCB19 /* GUI_iOS.mm */,
+				726044DE1C762F19004DCB19 /* jsFileUtils.cpp */,
+				726044DF1C762F19004DCB19 /* jsFileUtils.h */,
 				386D39521C33AF5C00769F0E /* GUI_BasicWidgets.cpp */,
 				386D39531C33AF5C00769F0E /* GUI_BasicWidgets.h */,
 				386D39541C33AF5C00769F0E /* GUI_MainWin.cpp */,
@@ -230,9 +201,11 @@
 		38CA5CD41BCCAFF00099BC3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				386D39421C33AF4500769F0E /* SDL_ttf.xcodeproj */,
+				726044E71C7631F8004DCB19 /* boost_filesystem.a */,
+				726044E81C7631F8004DCB19 /* boost_system.a */,
+				386D39421C33AF4500769F0E /* SDL.xcodeproj */,
 				386D393C1C33AF3A00769F0E /* SDL_image.xcodeproj */,
-				386D39351C33AF2E00769F0E /* SDL.xcodeproj */,
+				386D39351C33AF2E00769F0E /* SDL_ttf.xcodeproj */,
 				386614431BCF778100643DB9 /* MobileCoreServices.framework */,
 				386614411BCF775200643DB9 /* ImageIO.framework */,
 				3866143F1BCF771600643DB9 /* CoreImage.framework */,
@@ -258,6 +231,30 @@
 			path = ../src;
 			sourceTree = "<group>";
 		};
+		726044BE1C762B0F004DCB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				726044C31C762B0F004DCB19 /* libSDL2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		726044C41C762B37004DCB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				726044C81C762B37004DCB19 /* libSDL2_image.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		726044C91C762B4B004DCB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				726044CD1C762B4B004DCB19 /* libSDL2_ttf.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,9 +269,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				386D39491C33AF5100769F0E /* PBXTargetDependency */,
-				386D394B1C33AF5100769F0E /* PBXTargetDependency */,
-				386D394D1C33AF5100769F0E /* PBXTargetDependency */,
 			);
 			name = iOS;
 			productName = iOS;
@@ -287,7 +281,7 @@
 		38CA5C941BCCAF2B0099BC3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jimmy Software Co.,Ltd.";
 				TargetAttributes = {
 					38CA5C9B1BCCAF2B0099BC3B = {
@@ -308,16 +302,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 386D39361C33AF2E00769F0E /* Products */;
-					ProjectRef = 386D39351C33AF2E00769F0E /* SDL.xcodeproj */;
+					ProductGroup = 726044BE1C762B0F004DCB19 /* Products */;
+					ProjectRef = 386D39421C33AF4500769F0E /* SDL.xcodeproj */;
 				},
 				{
-					ProductGroup = 386D393D1C33AF3A00769F0E /* Products */;
+					ProductGroup = 726044C41C762B37004DCB19 /* Products */;
 					ProjectRef = 386D393C1C33AF3A00769F0E /* SDL_image.xcodeproj */;
 				},
 				{
-					ProductGroup = 386D39431C33AF4500769F0E /* Products */;
-					ProjectRef = 386D39421C33AF4500769F0E /* SDL_ttf.xcodeproj */;
+					ProductGroup = 726044C91C762B4B004DCB19 /* Products */;
+					ProjectRef = 386D39351C33AF2E00769F0E /* SDL_ttf.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -328,25 +322,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		386D393B1C33AF2F00769F0E /* libSDL2.a */ = {
+		726044C31C762B0F004DCB19 /* libSDL2.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDL2.a;
-			remoteRef = 386D393A1C33AF2F00769F0E /* PBXContainerItemProxy */;
+			remoteRef = 726044C21C762B0F004DCB19 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		386D39411C33AF3A00769F0E /* libSDL2_image.a */ = {
+		726044C81C762B37004DCB19 /* libSDL2_image.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDL2_image.a;
-			remoteRef = 386D39401C33AF3A00769F0E /* PBXContainerItemProxy */;
+			remoteRef = 726044C71C762B37004DCB19 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		386D39471C33AF4500769F0E /* libSDL2_ttf.a */ = {
+		726044CD1C762B4B004DCB19 /* libSDL2_ttf.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDL2_ttf.a;
-			remoteRef = 386D39461C33AF4500769F0E /* PBXContainerItemProxy */;
+			remoteRef = 726044CC1C762B4B004DCB19 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -374,30 +368,14 @@
 				386D39631C33AF5C00769F0E /* GUI_utils.cpp in Sources */,
 				386D39641C33AF5C00769F0E /* GUI_WinBase.cpp in Sources */,
 				386D39611C33AF5C00769F0E /* GUI_MainWin.cpp in Sources */,
+				726044E31C762F49004DCB19 /* GUI_iOS.mm in Sources */,
 				386D39651C33AF5C00769F0E /* SDL_gui.cpp in Sources */,
+				726044E01C762F19004DCB19 /* jsFileUtils.cpp in Sources */,
 				384BBBB41BCE301900D0B592 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		386D39491C33AF5100769F0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Static Library";
-			targetProxy = 386D39481C33AF5100769F0E /* PBXContainerItemProxy */;
-		};
-		386D394B1C33AF5100769F0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = libSDL_image;
-			targetProxy = 386D394A1C33AF5100769F0E /* PBXContainerItemProxy */;
-		};
-		386D394D1C33AF5100769F0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = libSDL;
-			targetProxy = 386D394C1C33AF5100769F0E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		38CA5CAD1BCCAF2B0099BC3B /* LaunchScreen.storyboard */ = {
@@ -432,7 +410,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -502,6 +480,7 @@
 					"$(SDL_ROOT)/include",
 					"$(SDL_IMAGE_ROOT)",
 					"$(SDL_TTF_ROOT)",
+					"$(BOOST_INCLUDE)",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -518,6 +497,7 @@
 					"$(SDL_ROOT)/include",
 					"$(SDL_IMAGE_ROOT)",
 					"$(SDL_TTF_ROOT)",
+					"$(BOOST_INCLUDE)",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

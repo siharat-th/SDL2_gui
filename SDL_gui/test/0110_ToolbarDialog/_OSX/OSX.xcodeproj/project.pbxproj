@@ -530,12 +530,12 @@
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = (
-					../../../../SDL2/include,
-					../../../../SDL2_image,
-					../../../../SDL2_ttf,
-					../../../libs/boost/include,
+					"$(SDL_ROOT)/include",
+					"$(SDL_IMAGE_ROOT)",
+					"$(SDL_TTF_ROOT)",
+					"$(BOOST_INCLUDE)",
 				);
-				LIBRARY_SEARCH_PATHS = ../../../libs/boost/lib/osx;
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -551,12 +551,12 @@
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = (
-					../../../../SDL2/include,
-					../../../../SDL2_image,
-					../../../../SDL2_ttf,
-					../../../libs/boost/include,
+					"$(SDL_ROOT)/include",
+					"$(SDL_IMAGE_ROOT)",
+					"$(SDL_TTF_ROOT)",
+					"$(BOOST_INCLUDE)",
 				);
-				LIBRARY_SEARCH_PATHS = ../../../libs/boost/lib/osx;
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
